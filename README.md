@@ -7,4 +7,4 @@ The main purpose of this repository is to track my learning progress and create 
 Feel free to explore and learn along with me!
 
 ## Table of Contents
-- [Day 1: What is RAG?](./RAG/README)
+- [Day 1: What is RAG?](./RAG/README.md)
