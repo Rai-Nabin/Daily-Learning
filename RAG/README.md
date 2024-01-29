@@ -1,0 +1,4 @@
+**RAG**: [What is Retrieval-Augmented Generation?](https://research.ibm.com/blog/retrieval-augmented-generation-RAG?utm_medium=OSocial&utm_source=Youtube&utm_content=WAIWW&utm_id=YT-101-What-is-RAG&_gl=1*p6ef17*_ga*MTQwMzQ5NjMwMi4xNjkxNDE2MDc0*_ga_FYECCCS21D*MTY5MjcyMjgyNy40My4xLjE2OTI3MjMyMTcuMC4wLjA.)
+
+Large language models usually give great answers, but because they're limited to the training data used to create the model, over time they can become incomplete--or worse, generate answers that are just plain wrong. 
+One way of improving the LLM results is called "retrieval-augmented generation" or RAG.
