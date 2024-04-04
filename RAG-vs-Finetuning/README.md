@@ -6,5 +6,5 @@ This method combines two powerful techniques: retrieval, which is like searching
 ![RAG](./images/RAG.png)
 ## Finetuning
 This is the process of taking a pre-trained LLM and further training it on a smaller, specific dataset to adapt it for a particular task or to improve its performance. By finetuning, we are adjusting the model’s weights based on our data, making it more tailored to our application’s unique needs.
-![Finetuning](./images/Finetuning.png)
+![Finetuning](./images/finetuning.png)
 
