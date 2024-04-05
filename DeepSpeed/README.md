@@ -1,6 +1,7 @@
 | References | Link |
-| --- | --- |
-| Research Paper | ZeRO: Memory Optimizations Toward Training Trillion Parameter Models |
+| ---- | ---- |
+| Research Paper | [ZeRO: Memory Optimizations Toward Training Trillion Parameter Models](https://github.com/Rai-Nabin/Daily-Learning/blob/master/DeepSpeed/pdf/ZeRO.pdf) |
+
 ![ZeRO: Memory Optimizations Toward Training Trillion Parameters Models](./images/zero.png)
 # Abstract
 - Training very large deep learning models with billions to trillions of parameters is challenging due to memory limitations.
