@@ -1,4 +1,6 @@
-# Research Paper Summary
+| References | Link |
+| --- | --- |
+| Research Paper | ZeRO: Memory Optimizations Toward Training Trillion Parameter Models |
 ![ZeRO: Memory Optimizations Toward Training Trillion Parameters Models](./images/zero.png)
 # Abstract
 - Training very large deep learning models with billions to trillions of parameters is challenging due to memory limitations.
@@ -20,4 +22,18 @@
 	2. Remaining memory occupied by Residual States
 		- Include activation, temporary buffers, and unusable fragmented memory.
 - Optimizing Model State Memory
+	- Zero-powered data parallelism (ZeRO-DP)combines communication efficiency of DP with memory efficiency of MP.
+	- ZeRO-DP has three main optimization stages:
+	![Zero-DP optimization stages](images/zero-dp.png)
+	![Comparing per device memory consumption](./images/per-device-memory-consumption.png)
 - Optimizing Residual State Memory
+	- ZeRO-R is developed to optimize residual memory consumed by activation, temporary buffers, and unusable fragmented memory respectively.
+		1. Activations (stored from forward pass for backward pass) are optimized through activation partitioning to remove replication in existing MP approaches. Offloading activations to CPU when appropriate also helps in optimizing activation memory.
+		2. Temporary buffers have an appropriate size defined by ZeRO-R to balance memory and computation efficiency effectively.
+		3. Fragmented memory during training due to varying lifetimes of tensors can lead to allocation failures even with enough free space. ZeRO-R proactively manages this fragmentation issue based on tensor lifetimes.
+- ZeRO and MP
+	- ZeRO-DP is demonstrated to be equally or more effective than MP in decreasing per-device memory usage, particularly when MP encounters challenges in evenly dividing the model across devices.
+	- There are specific scenarios where leveraging Model Parallelism (MP) alongside ZeRO can be advantageous:
+		1. When combined with ZeRO-R, Model Parallelism (MP) can help reduce activation memory usage for very large models.
+		2. For smaller models where activation memory is not an issue, MP can also have benefits when aggregated batch size using DP alone is too big to have good convergence.
+- Implementation and Evaluation
