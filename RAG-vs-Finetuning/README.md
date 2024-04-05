@@ -1,7 +1,7 @@
 # RAG vs Finetuning
 | References | Link |
-| --- | --- |
-| Top Bots | https://www.topbots.com/rag-vs-finetuning-to-boost-your-llm-application/ |
+| ---- | ---- |
+| Top Bots | [RAG vs Finetuning - Which is the Best Tool to Boost Your LLM Application?](https://www.topbots.com/rag-vs-finetuning-to-boost-your-llm-application/) |
 
 As interest in Large Language Models (LLMs) grows, developers are faced with the challenge of improving their performance in applications. This leads to the consideration of whether to use Retrieval-Augmented Generation (RAG) or model finetuning for better results.
 ![RAG vs Finetuning](./images/RAG-vs-Finetuning.png)
