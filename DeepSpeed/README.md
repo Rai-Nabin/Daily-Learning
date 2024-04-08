@@ -1,4 +1,4 @@
-# Research Paper Summary
+# Research Paper Note
 | References | Link |
 | ---- | ---- |
 | Research Paper | [ZeRO: Memory Optimizations Toward Training Trillion Parameter Models](https://github.com/Rai-Nabin/Daily-Learning/blob/master/DeepSpeed/pdf/ZeRO.pdf) |
@@ -50,4 +50,40 @@
 		- New SOTA Model: ZeRO powers the largest language model with 17B parameters and record-breaking accuracy.
 
          ![Zero Throughput and Speedup w.r.t SOTA](./images/zero-throughput.png)
-  
+         
+         
+# Related Work
+- Data, Model and Pipeline Parallelism
+	- Data Parallelism (DP)
+		- DP is employed when the model can fit within the memory constraints of a single device.
+		- Model parameters are replicated on each device participating in training.
+		- During training, a mini-batch of data is evenly divided across all data parallel processes or devices.
+		- Each process works on its subset of data samples simultaneously.
+		- Forward propagation involves passing input through the neural network to generate predictions. This step occurs independently on each device for their respective subsets of data samples.
+		- Backward propagation calculates gradients by propagating errors backward through the network, also done independently per process.
+		- Averaged gradients from all processes are used to update the model locally after forward and backward passes have been completed.
+	- Model parallelism (MP)
+		- Involves splitting the model among different processes vertically.
+		- Used when a model is too large to fit in the memory of a single device.
+	- Pipeline Parallelism (PP)
+		- Involves splitting the model among different processes horizontally.
+		- Used when a model is too large to fit in the memory of a single device.
+		- Uses micro-batching to manage data flow.
+		- Implementing tied-weights and batch-normalization can be difficult due to horizontal splitting and micro-batching.
+- Non-parallelism based approach to reduce memory
+	- Reducing Activation Memory
+		- Multiple approaches aim to reduce the memory usage of deep learning training by compressing activations, utilizing activation checkpointing, or employing live analysis techniques. These methods, such as compression, checkpointing, and live analysis, can be used in conjunction with ZeRO, a memory optimization technique. 
+		- Specifically, in ZeRO-R, activation memory reduction works alongside activation checkpointing to further enhance memory efficiency during deep learning training.
+	- CPU Offload
+		- Offloads model states to CPU memory during training.
+		- Up to 50% of training time can be spent on GPU-CPU-GPU transfers, highlighting the importance of efficient memory management.
+	- Memory Efficient Optimizer
+		- Focus on reducing memory consumption of adaptive optimization methods by main-taining coarser-grained statistics of model parameters and gradients, with potential impact on model convergence guarantees.
+- Training Optimizers
+	- Adaptive optimization methods are essential for achieving state-of-the-art performance and accuracy in training large models. 
+	- These methods maintain detailed statistics for each model parameter and gradient, which can require significant memory usage. 
+	- ZeRO optimization technique reduces the memory footprint of adaptive optimizers by orders of magnitude. 
+	- This reduction enables practical training of large models on devices with limited memory capacity. 
+	- With ZeRO, it becomes feasible to explore more complex and memory-intensive optimization strategies that may lead to improved convergence during model training.
+
+# Where Did All the Memory Go?
