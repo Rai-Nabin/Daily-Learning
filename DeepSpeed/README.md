@@ -97,4 +97,18 @@
 		- During mixed-precision training, both the forward and backward propagation are performed using fp16 weights and activations. However, to effectively compute and apply the updates at the end of the backward propagation, the mixed-precision optimizer keeps an fp32 copy of the parameters as well as an fp32 copy of all the other optimizer states.
 		![Mixed Precision Training Memory consumpiton](./images/mixed-precision-training.png)
 - Residual Memory Consumption
-	- 
+	- Activations
+		- Activation can take up a significant amount of memory during training.
+		- A GPT-2 model with 1.5 billion parameters, trained with a sequence length of 1K and batch size of 32, may require around 60 GB of memory.
+		- Activation checkpointing is a technique used to reduce activation memory consumption by approximately the square root of total activations.
+		- This technique introduces about a 33% re-computation overhead.
+		- This would reduce the activation memory consumption of this model to about 8 GB.
+	- Temporary buffers
+		- Temporary buffers are used for storing intermediate results during training of large models.
+		- Operations like gradient all-reduce combine gradients into a single buffer to improve processing speed. 
+		- The buffer can be larger depending on the operation type, such as fp32 format for certain operations. 
+		- In a model with 1.5 billion parameters, a flattened fp32 buffer would require 6 GB of memory.
+	- Memory Fragmentation
+		- Memory fragmentation can lead to running out of usable memory during training, even when there is sufficient total memory available. 
+		- Memory fragmentation occurs when there is not enough contiguous memory to fulfill a memory request, causing out-of-memory issues despite having unused memory. 
+		- This issue is particularly significant when training very large models, resulting in operational challenges during the training process.
