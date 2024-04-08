@@ -87,3 +87,14 @@
 	- With ZeRO, it becomes feasible to explore more complex and memory-intensive optimization strategies that may lead to improved convergence during model training.
 
 # Where Did All the Memory Go?
+- A 1.5B parameter GPT-2 model requires 3GB  of memory for its weights (or parameters) in 16-bit precision, yet, it cannot be trained on a single GPU with 32 GB memory using Tensorflow or PyTorch. One may wonder where all the memory goes.
+- Model States: Optimizer States, Gradients and Parameters
+	- During model training, a significant portion of memory is used by model states (optimizer states, gradients, and parameters).
+	- The Adam optimizer is commonly used in model training.
+	- Adam requires storing two key optimizer states: the time-averaged momentum and the variance of gradients to calculate updates.
+	- Optimizer states typically consume the most memory, especially in scenarios like mixed-precision training.
+	- Mixed-Precision Training
+		- During mixed-precision training, both the forward and backward propagation are performed using fp16 weights and activations. However, to effectively compute and apply the updates at the end of the backward propagation, the mixed-precision optimizer keeps an fp32 copy of the parameters as well as an fp32 copy of all the other optimizer states.
+		![Mixed Precision Training Memory consumpiton](./images/mixed-precision-training.png)
+- Residual Memory Consumption
+	- 
