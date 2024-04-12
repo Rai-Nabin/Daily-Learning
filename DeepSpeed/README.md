@@ -11,6 +11,12 @@
 | 3 | Compression | [DeepSpeed-Compression](https://www.deepspeed.ai/compression) |
 | 4 | Science | [DeepSpeed4Science](https://www.deepspeed.ai/deepspeed4science/) |
 
+**Learn more about ZeRO:**
+
+| Note | Link |
+| ---- | ---- |
+| ZeRO  | [link](./note/README.md) |
+
 ## Resources
 
 | Research Paper | Link | note |
@@ -28,3 +34,7 @@
 | Turing-NLG, DeepSpeed and the ZeRO optimizer | [link](https://www.youtube.com/watch?v=tC01FRB0M7w&t=822s&ab_channel=YannicKilcher) |
 | Microsoft DeepSpeed Introduction at KAUST | [link](https://www.youtube.com/watch?v=wbG2ZEDPIyw&t=302s&ab_channel=KAUSTSupercomputingLaboratory) |
 
+| Documentation | Link |
+| ---- | ---- |
+| HuggingFace | [link](https://huggingface.co/docs/transformers/main/en/deepspeed) |
+| DeepSpeed | [link](https://deepspeed.readthedocs.io/en/latest/memory.html) |
