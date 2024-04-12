@@ -13,7 +13,7 @@ Feel free to explore and learn along with me!
 | :--: | ---- | :--: | :--: |
 | 1 | What is RAG? | [note](./RAG/README.md) | &#x2610; |
 | 2 | RAG vs Finetuning - Which is the Best Tool to Boost Your LLM Application? | [note](./RAG-vs-Finetuning/README.md) | &#x2610; |
-| 3 | DeepSpeed (ZeRO: Memory Optimizations Toward Training Trillion Parameters Model) | [note](./DeepSpeed/README.md) | &#x2610; |
+| 3 | ZeRO & DeepSpeed | [note](DeepSpeed/README.md) | &#x2610; |
 | 4 | Graph RAG |  | &#x2610; |
 | 5 | Model Merge |  | &#x2610; |
 | 6 | HuggingFace's model Memory Calculator |  | &#x2610; |
@@ -21,3 +21,5 @@ Feel free to explore and learn along with me!
 | 8 | Switch Transformers | [note](./Switch-Transformers/README.md) | &#x2610; |
 | 9 | Retrieval Meets Long Context LLMs | [note](./Retrieval/README.md) | &#x2610; |
 | 10 | Training Language Models to Follow Instructions with Human Feedback | [note](./RLHF/README.md) | &#x2610; |
+| 11 | Visual intro to transformers |  | &#x2610; |
+| 12 | Visualizing Attention, a Transformer's Heart |  |  |
