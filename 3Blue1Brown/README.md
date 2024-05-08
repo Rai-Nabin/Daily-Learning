@@ -7,6 +7,7 @@
 | 3 | Back Propagation |  |  |
 | 4 | What is a GPT? |  |  |
 | 5 | Attention in Transformers |  |  |
+
 *Essence of Linear Algebra*
 
 | S.N | Title | Note | Completion |
@@ -27,6 +28,7 @@
 | 14 | Eigenvectors and Eigenvalues |  |  |
 | 15 | A Quick Trick for Computing Eigenvalues |  |  |
 | 16 | Abstract Vector Spaces |  |  |
+
 *Essence of Calculus*
 
 | S.N | Title | Note | Completion |
@@ -47,6 +49,7 @@
 | :--: | ---- | ---- | ---- |
 | 1 | Binomial Distribution |  |  |
 | 2 | Why "probability of 0" does not mean "impossible" |  |  |
+
 *Others*
 
 | S.N | Title | Resources |
