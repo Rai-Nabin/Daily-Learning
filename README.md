@@ -14,6 +14,7 @@ Feel free to explore and learn along with me!
 | 1 | Methods and Tools for Efficient Training on Single GPU |  |  |
 | 2 | LoRA and Its Derivatives |  |  |
 | 3 | Optimizing LLMs for Speed and Memory |  |  |
+
 *April 2024*
 
 | S.N | Title | Note | Completion |
@@ -38,3 +39,12 @@ Feel free to explore and learn along with me!
 | S.N | Title | Resources |
 | :--: | ---- | :--: |
 | 1 | Let's Build GPT | [link](https://www.youtube.com/watch?v=kCc8FmEb1nY&ab_channel=AndrejKarpathy) |
+| 2 | Let's Build the GPT Tokenizer | [link](https://www.youtube.com/watch?v=zduSFxRajkE&ab_channel=AndrejKarpathy) |
+| 3 | Efficient Training on Multiple GPUs | [link](https://huggingface.co/docs/transformers/main/en/perf_train_gpu_many) |
+| 4 | Mistral AI Business Model | [link](https://research.contrary.com/reports/mistral-ai) |
+| 5 | Understanding and Using SFT for Language Models | [link](https://cameronrwolfe.substack.com/p/understanding-and-using-supervised) |
+| 6 | Understanding and Estimating GPU Memory Demands For Training LLMs in Practice | [link](https://medium.com/@maxshapp/understanding-and-estimating-gpu-memory-demands-for-training-llms-in-practise-c5ef20a4baff) |
+| 7 | A Gentle Introduction to 8-bit Matrix Multiplication for Transformers at Scale | [link](https://huggingface.co/blog/hf-bitsandbytes-integration) |
+| 8 | Can LLMs Learn from a Single Example? | [link](https://www.fast.ai/posts/2023-09-04-learning-jumps/) |
+| 9 | Is DPO Always the Better Choice for Preference Tuning LLMs? | [link](https://deci.ai/blog/dpo-preference-tuning-llms/) |
+| 10 | Efficient Large Language Models: A Survey | [link](https://github.com/AIoT-MLSys-Lab/Efficient-LLMs-Survey?tab=readme-ov-file) |
