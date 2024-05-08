@@ -7,6 +7,13 @@ The main purpose of this repository is to track my learning progress and create 
 Feel free to explore and learn along with me!
 
 ## Table of Contents
+*May 2024*
+
+| S.N | Title | Note | Completion |
+| :--: | ---- | :--: | :--: |
+| 1 | Methods and Tools for Efficient Training on Single GPU |  |  |
+| 2 | LoRA and Its Derivatives |  |  |
+| 3 | Optimizing LLMs for Speed and Memory |  |  |
 *April 2024*
 
 | S.N | Title | Note | Completion |
@@ -15,7 +22,7 @@ Feel free to explore and learn along with me!
 | 2 | RAG vs Finetuning - Which is the Best Tool to Boost Your LLM Application? | [note](./RAG-vs-Finetuning/README.md) | &#x2610; |
 | 3 | ZeRO & DeepSpeed | [note](DeepSpeed/README.md) | &#x2611; |
 | 4 | Graph RAG | note | &#x2610; |
-| 5 | Model Merge | note | &#x2610; |
+| 5 | Model Merge Methods | note | &#x2610; |
 | 6 | HuggingFace's model Memory Calculator | note | &#x2610; |
 | 7 | RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback |  | &#x2610; |
 | 8 | Switch Transformers | [note](./Switch-Transformers/README.md) | &#x2610; |
@@ -23,3 +30,11 @@ Feel free to explore and learn along with me!
 | 10 | Training Language Models to Follow Instructions with Human Feedback | [note](./RLHF/README.md) | &#x2610; |
 | 11 | Visual intro to transformers |  | &#x2610; |
 | 12 | Visualizing Attention, a Transformer's Heart |  |  |
+| 13 | Quantization in LLM |  |  |
+| 14 | Distributed and Accelerated Model Training/Inference Libraries |  |  |
+| 15 | 1-bit LLM |  |  |
+| 16 | AI Constellations |  |  |
+## Article/Blogs/Paper To Read
+| S.N | Title | Resources |
+| :--: | ---- | :--: |
+| 1 | Let's Build GPT | [link](https://www.youtube.com/watch?v=kCc8FmEb1nY&ab_channel=AndrejKarpathy) |
