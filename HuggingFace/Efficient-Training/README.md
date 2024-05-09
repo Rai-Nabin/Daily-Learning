@@ -1,3 +1,4 @@
+# Methods and Tools for Efficient Training on a Single GPU
 *Resources*
 
 | S.N | Topics | Link |
@@ -20,3 +21,11 @@ Data Throughput means "the speed at which training data is fed into the model du
 - Use techniques like Gradient Accumulation when the desired batch sized exceeds GPU memory limits, but avoid them if the batch size fits comfortably within memory to prevent from slow training time.
 
 ![Techniques comparison](./Images/Overview.png)
+# Gradient Accumulation
+**What is Gradient Accumulation?**
+
+Gradient accumulation is a technique used in training neural networks to overcome memory limitations and support larger batch sizes.
+
+> [!NOTE] How mini-batch stochastic gradient descent updates model parameters
+> The model parameters are updated after processing each individual batch of training data.
+
