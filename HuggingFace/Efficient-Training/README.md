@@ -19,4 +19,4 @@ Data Throughput means "the speed at which training data is fed into the model du
 - Utilize the GPU as much as possible
 - Use techniques like Gradient Accumulation when the desired batch sized exceeds GPU memory limits, but avoid them if the batch size fits comfortably within memory to prevent from slow training time.
 
-![Techniques comparison](./images/Overview.png)
+![Techniques comparison](./Images/Overview.png)
