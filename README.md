@@ -11,9 +11,9 @@ Feel free to explore and learn along with me!
 
 | S.N | Title | Note | Completion |
 | :--: | ---- | :--: | :--: |
-| 1 | Methods and Tools for Efficient Training on Single GPU |  |  |
-| 2 | LoRA and Its Derivatives |  |  |
-| 3 | Optimizing LLMs for Speed and Memory |  |  |
+| 1 | Methods and Tools for Efficient Training on Single GPU | [link](./HuggingFace/Efficient-Training/README.md) | &#x2610; |
+| 2 | LoRA and Its Derivatives |  | &#x2610; |
+| 3 | Optimizing LLMs for Speed and Memory |  | &#x2610; |
 
 *April 2024*
 
