@@ -48,9 +48,11 @@ In Gradient Accumulation, the gradients  are accumulated over multiple batches 
 In vanilla back propagation, the required memory grows linearly with the number of layers _n_ in the neural network. This is because all nodes from the forward pass are being kept in memory (until all their dependent child nodes are processed).
 
 **How Gradient Checkpointing Works?**
+
 **Forward Pass:**
 - Only certain intermediate activations (checkpoints) are stored in memory during the forward pass.
 - The selection of these checkpoints can be based on various strategies, such as every 'n' layers or based on specific memory constraints.
+
 **Backward Pass:**
 - Some intermediate activations were not stored (due to checkpointing), they need to be recomputed before calculation. This recomputation involves redoing parts of the forward pass from the last checkpoint to the desired layer.
 - The gradient is then computed using the recomputed activations.
@@ -60,6 +62,7 @@ In vanilla back propagation, the required memory grows linearly with the number 
 - **Reduced Memory Usage**: By recomputing checkpointed activations, gradient checkpointing reduces the memory required to store the gradients, which can be particularly useful when training large models or processing large datasets.
 - **Increased Effective Batch Size**: Gradient checkpointing allows for training with larger effective batch sizes, which can improve model performance and convergence.
 - **Improved Training Stability**: By reducing the memory footprint, gradient checkpointing can help stabilize the training process, particularly when working with batch sizes that are too large to fit into memory.
+
 **References:**
 - [Gradient Checkpointing Demo](https://github.com/rasbt/deeplearning-models/blob/master/pytorch_ipynb/mechanics/gradient-checkpointing-nin.ipynb)
 - [Gradient Checkpointing](https://aman.ai/primers/ai/grad-accum-checkpoint/#:~:text=(accumulated_gradients)-,Gradient%20Checkpointing,-Gradient%20checkpointing%20is)
