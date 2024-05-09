@@ -26,6 +26,14 @@ Data Throughput means "the speed at which training data is fed into the model du
 
 Gradient accumulation is a technique used in training neural networks to overcome memory limitations and support larger batch sizes.
 
-> [!NOTE] How mini-batch stochastic gradient descent updates model parameters
+> **How mini-batch stochastic gradient descent updates model parameters?**
+> 
 > The model parameters are updated after processing each individual batch of training data.
 
+![Gradient Accumulation](./Images/gradient-accumulation.png)
+In Gradient Accumulation, the gradients  are accumulated over multiple batches before updating the model parameters. Specifically, the gradients are computed for each mini-batch, but the parameter updates are only performed after a certain number of mini-batches have been processed (e.g. every 4 batches).
+![Advantages of Gradient Accumulation](./Images/g-a-advantages.png)
+
+**References:**
+- [Gradient Accumulation](https://www.hopsworks.ai/dictionary/gradient-accumulation)
+- [What is Gradient Accumulation in Deep Learning?](https://towardsdatascience.com/what-is-gradient-accumulation-in-deep-learning-ec034122cfa)
