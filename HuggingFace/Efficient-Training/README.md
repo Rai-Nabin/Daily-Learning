@@ -67,3 +67,21 @@ In vanilla back propagation, the required memory grows linearly with the number 
 - [Gradient Checkpointing Demo](https://github.com/rasbt/deeplearning-models/blob/master/pytorch_ipynb/mechanics/gradient-checkpointing-nin.ipynb)
 - [Gradient Checkpointing](https://aman.ai/primers/ai/grad-accum-checkpoint/#:~:text=(accumulated_gradients)-,Gradient%20Checkpointing,-Gradient%20checkpointing%20is)
 - [Fitting Larger Networks into Memory](https://medium.com/tensorflow/fitting-larger-networks-into-memory-583e3c758ff9)
+# Mixed Precision Training
+In Mixed Precision Training, weights, activations, and gradients are stored using half-precision (FP16) to save memory and increase training speed compared to standard single-precision (FP32) training. However, to maintain accuracy, an FP32 master copy of the weights is kept and updated  during optimizer step.
+
+![Mixed Precision Training](./Images/mixed-precision-training.png)
+
+**Why is the FP32 Master Copy Needed?**
+
+- **Small Gradient Values**: FP16 has a limited range for representing numbers. Any value smaller than `2^-24`  becomes zero. In some cases, gradients can be this small, which would lead to updates being lost, thus affecting model accuracy. By maintaining the FP32 master copy, these small values can be retained, ensuring accuracy.
+- **High Ratio between Weights and Updates**: FP16 has only 10 bits of mantissa, leading to precision loss when the ratio of weight values to updates is large. If the weight magnitude is at least 2048 times larger than the update, the update can become zero due to right-shifting in the addition process. An FP32 master copy prevents this issue.
+
+**Results:**
+
+- The Baseline (FP32) experiments were conducted on NVIDIA's Maxwell GPU.
+- Mixed Precision (FP16) experiments were conducted on Volta V100 GPU.
+- In both experiments, identical hyper-parameters were used for ILSVRC classification task.
+- In all of these experiments, the top-1 accuracy of mixed precision training were matched to that of baseline.
+
+![Mixed Precision Training Results](./Images/mixed-precision-training-result.png)
