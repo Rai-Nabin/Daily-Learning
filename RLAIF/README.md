@@ -291,7 +291,7 @@ The following datasets are used for experiments:
 - The impact of detailed preambles on helpful and harmless dialogue generation is mixed. These tasks are more intuitive, so they may not require as detailed instructions.
 - Rating helpfulness and harmlessness are easier to grasp intuitively; therefore, they may benefit less from detailed instructions.
 
-![AI Labeler Alignment](ai-labeler-alignment.png)
+![AI Labeler Alignment](./images/ai-labeler-alignment.png)
 
 **Size of LLM Labeler**
 
