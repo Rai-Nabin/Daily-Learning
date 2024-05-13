@@ -303,7 +303,7 @@ The following datasets are used for experiments:
 - The AI labeler is used only once to generate examples, not during ongoing RL process.
 - Therefore, using a larger, more complex AI labeler may not significantly increase cost or computational demands.
 
-![](ai-labeler-model.png)
+![](./images/ai-labeler-model.png)
 
 # Qualitative Observations
 - RLHF sometimes "hallucinates" during text summarization. This means it includes plausible but non-existent information from the original text.
