@@ -25,7 +25,7 @@ Feel free to explore and learn along with me!
 | 4 | Graph RAG | note | &#x2610; |
 | 5 | Model Merge Methods | note | &#x2610; |
 | 6 | HuggingFace's model Memory Calculator | note | &#x2610; |
-| 7 | RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback | [note](./RLAIF/README.md) | &#x2610; |
+| 7 | RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback | [note](./RLAIF/README.md) | &#x2611; |
 | 8 | Switch Transformers | [note](./Switch-Transformers/README.md) | &#x2610; |
 | 9 | Retrieval Meets Long Context LLMs | [note](./Retrieval/README.md) | &#x2610; |
 | 10 | Training Language Models to Follow Instructions with Human Feedback | [note](./RLHF/README.md) | &#x2610; |
