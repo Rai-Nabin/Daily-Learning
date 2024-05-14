@@ -87,7 +87,11 @@ In Mixed Precision Training, weights, activations, and gradients are stored usin
 ![Mixed Precision Training Results](./Images/mixed-precision-training-result.png)
 
 | **Advantages** |
-| ---- |
+| :--- |
 | **Improved Training Speed**: Lower-precision data types like float16 and bfloat16 can be processed faster by specialized hardware, such as NVIDIA's Tensor Cores. This allows for significantly faster matrix multiplications and convolutions, which are the most computationally intensive operations in neural networks. On modern GPUs like the NVIDIA A100, peak float16 matrix multiplication performance can be up to 16x faster than float32. <br>**Reduced Memory Usage**: The float16 and bfloat16 data types are half the size of float32, effectively doubling the available memory. This allows for training larger models, using larger batch sizes, or processing larger input data.<br>**Preserved Numerical Stability**: While the lower-precision data types are used for most computations, the model parameters and other critical values are still stored and updated in float32 to maintain numerical stability and prevent loss of precision. |
 | **Disadvantages** |
 | **Reduced Numerical Precision**: Lowering the precision from float32 to float16 or bfloat16 can lead to a loss of numerical precision, which may impact the accuracy of the model, especially in scenarios where high precision is crucial.<br>**Compatibility Limitations**: Not all GPUs support mixed precision training, as it requires specific hardware features like Tensor Cores. Models trained on hardware without adequate support for mixed precision may not benefit from the speed and memory improvements offered by this technique. |
+
+**References:**
+- [Mixed Precision Training](https://arxiv.org/pdf/1710.03740)
+- [Train with Mixed Precision Training](https://docs.nvidia.com/deeplearning/performance/mixed-precision-training/index.html)
