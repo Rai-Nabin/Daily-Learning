@@ -11,22 +11,24 @@ Feel free to explore and learn along with me!
 
 | S.N | Title | Note | Completion |
 | :--: | ---- | :--: | :--: |
-| 1 | Methods and Tools for Efficient Training on Single GPU | [link](./HuggingFace/Efficient-Training/README.md) | &#x2610; |
+| 1 | Methods and Tools for Efficient Training on Single GPU | [note](./HuggingFace/Efficient-Training/README.md) | &#x2610; |
 | 2 | LoRA and Its Derivatives |  | &#x2610; |
 | 3 | Optimizing LLMs for Speed and Memory |  | &#x2610; |
+| 4 | DAPT | [note](./DAPT/README.md) | &#x2611; |
+| 5 |  |  |  |
 
 *April 2024*
 
 | S.N | Title | Note | Completion |
 | :--: | ---- | :--: | :--: |
-| 1 | What is RAG? | [note](./RAG/README.md) | &#x2610; |
+| 1 | What is RAG? | [note](Daily-Learning/RAG/README.md) | &#x2610; |
 | 2 | RAG vs Finetuning - Which is the Best Tool to Boost Your LLM Application? | [note](./RAG-vs-Finetuning/README.md) | &#x2610; |
 | 3 | ZeRO & DeepSpeed | [note](DeepSpeed/README.md) | &#x2611; |
-| 4 | Graph RAG | note | &#x2610; |
-| 5 | Model Merge Methods | note | &#x2610; |
+| 4 | Graph RAG | [note](./Graph-RAG/README.md) | &#x2610; |
+| 5 | Model Merge Methods | [note](./Model-Merge/README.md) | &#x2610; |
 | 6 | HuggingFace's model Memory Calculator | note | &#x2610; |
 | 7 | RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback | [note](./RLAIF/README.md) | &#x2611; |
-| 8 | Switch Transformers | [note](./Switch-Transformers/README.md) | &#x2610; |
+| 8 | Switch Transformers | [note](Daily-Learning/Switch-Transformers/README.md) | &#x2610; |
 | 9 | Retrieval Meets Long Context LLMs | [note](./Retrieval/README.md) | &#x2610; |
 | 10 | Training Language Models to Follow Instructions with Human Feedback | [note](./RLHF/README.md) | &#x2610; |
 | 11 | Visual intro to transformers |  | &#x2610; |
