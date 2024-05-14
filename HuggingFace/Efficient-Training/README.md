@@ -95,3 +95,22 @@ In Mixed Precision Training, weights, activations, and gradients are stored usin
 **References:**
 - [Mixed Precision Training](https://arxiv.org/pdf/1710.03740)
 - [Train with Mixed Precision Training](https://docs.nvidia.com/deeplearning/performance/mixed-precision-training/index.html)
+# Data Preloading
+**Training large models often requires optimizing data loading to keep the GPU fully utilized**.
+
+**Here, is how two key arguments in `DataLoader`  can help**:
+
+1. `pin_memory=True` : This preloads the data into a special CPU memory region (pinned memory) that allows faster transfer to the GPU memory.  This bypasses the slower process of copying data from regular CPU memory each time.
+2. `num_workers=N` : This spawns `N`  worker processes that work in parallel to preload data from disk. This can significantly increase data loading speed, especially when dealing with large datasets.
+
+When using [Trainer](https://huggingface.co/docs/transformers/main/en/main_classes/trainer#transformers.Trainer), the corresponding [TrainingArguments](https://huggingface.co/docs/transformers/main/en/main_classes/trainer#transformers.TrainingArguments) are: `dataloader_pin_memory` (`True` by default), and `dataloader_num_workers` (defaults to `0`).
+
+| **Advantages** |
+| :--- |
+| **Faster Training Speeds:** By preloading data into memory (or cache) before it's needed for training, you eliminate the bottleneck of constantly reading data from disk during each training iteration. This can lead to substantial reductions in training time, especially when dealing with large datasets.<br>**Reduced GPU Underutilization:** Data loading from disk can be a slow process compared to GPU computations. Preloading ensures a constant stream of data ready for the GPU, maximizing its utilization and accelerating the overall training process.<br>**Reduced Training Variability:** When data is read from disk during training, there can be variations in access times depending on factors like disk speed. Preloading removes this variability, leading to more consistent training times across runs. |
+| **Disadvantages** |
+| **Increased Memory Usage:** Preloading data requires storing it in memory before being used. This can significantly increase memory consumption, especially for large datasets. On systems with limited memory, this might not be feasible.<br>**Limited Portability:** Preloaded data might be specific to the system it was created on. If you intend to transfer your training pipeline to a different system with a different architecture, the preloaded data might not be usable. |
+
+**References:**
+
+- [Data Preloading](https://huggingface.co/docs/transformers/main/en/perf_train_gpu_one#mixed-precision-training:~:text=GitHub%20issue.-,Data%20preloading,-One%20of%20the)
