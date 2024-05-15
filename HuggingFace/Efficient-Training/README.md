@@ -114,3 +114,34 @@ When using [Trainer](https://huggingface.co/docs/transformers/main/en/main_clas
 **References:**
 
 - [Data Preloading](https://huggingface.co/docs/transformers/main/en/perf_train_gpu_one#mixed-precision-training:~:text=GitHub%20issue.-,Data%20preloading,-One%20of%20the)
+# Torch.Compile
+**Lets first understand the fundamental difference between "Eager" and "Graph" executions in Deep Learning Frameworks.**
+![Eager execution vs Graph execution](./images/torch-compile.png)
+
+![Eager execution vs Graph execution](./images/eager-vs-graph.png)
+**Whenever you wrap your model under torch.compile, the model goes through the following steps before execution:**
+
+1. **Graph Acquisition:** The model is broken down and re-written into subgraphs. Subgraphs that can be compiled/optimized are flattened, whereas other subgraphs which can’t be compiled fall back to the eager model.
+2. **Graph Lowering:** All PyTorch operations are decomposed into their chosen backend-specific kernels.
+3. **Graph Compilation:** All the backend kernels call their corresponding low-level device operations.
+
+![Compilation Steps](./images/compilation-process.jpg)
+### Advantages
+- **Performance Boost:** The primary advantage is significant performance gains for training and inference. `torch.compile` optimizes PyTorch code, leading to faster execution times for deep learning models. This is especially beneficial for complex models or large datasets.
+- **Preserves Eager Execution:** Unlike TensorFlow's graph execution, PyTorch traditionally relies on eager execution, allowing for easier coding and debugging. `torch.compile` achieves performance improvements while staying within eager execution, making code easier to maintain and understand.
+- **Dynamic Shape Support:** PyTorch 2.0 with `torch.compile` allows models to handle tensors with varying sizes during training or inference. This eliminates the need for pre-defined static shapes, making models more adaptable to diverse datasets.
+### Disadvantages
+- **Limited Performance Gains in Certain Scenarios:** Performance improvements can vary depending on factors like:
+
+	- **Model architecture:** Simpler models might not benefit as much.
+	
+	- **Hardware:** Gains might be less significant on CPUs or non-compatible GPUs.
+	
+	- **Dataset size:** Smaller datasets might not see substantial speedups.
+
+**References:**
+
+- [PyTorch 2.0 Overview](https://pytorch.org/get-started/pytorch-2.0/)
+- [What's New in PyTorch 2.0? torch.compile](https://pyimagesearch.com/2023/03/27/whats-new-in-pytorch-2-0-torch-compile/)
+- [Using torch.compile](https://huggingface.co/docs/transformers/main/en/perf_train_gpu_one#data-preloading:~:text=DeepSpeed%20guide.-,Using%20torch.compile,-PyTorch%202.0%20introduced)
+
