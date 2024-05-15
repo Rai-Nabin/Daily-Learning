@@ -116,16 +116,16 @@ When using [Trainer](https://huggingface.co/docs/transformers/main/en/main_clas
 - [Data Preloading](https://huggingface.co/docs/transformers/main/en/perf_train_gpu_one#mixed-precision-training:~:text=GitHub%20issue.-,Data%20preloading,-One%20of%20the)
 # Torch.Compile
 **Lets first understand the fundamental difference between "Eager" and "Graph" executions in Deep Learning Frameworks.**
-![Eager execution vs Graph execution](./images/torch-compile.png)
+![Eager execution vs Graph execution](./Images/torch-compile.png)
 
-![Eager execution vs Graph execution](./images/eager-vs-graph.png)
+![Eager execution vs Graph execution](./Images/eager-vs-graph.png)
 **Whenever you wrap your model under torch.compile, the model goes through the following steps before execution:**
 
 1. **Graph Acquisition:** The model is broken down and re-written into subgraphs. Subgraphs that can be compiled/optimized are flattened, whereas other subgraphs which can’t be compiled fall back to the eager model.
 2. **Graph Lowering:** All PyTorch operations are decomposed into their chosen backend-specific kernels.
 3. **Graph Compilation:** All the backend kernels call their corresponding low-level device operations.
 
-![Compilation Steps](./images/compilation-process.jpg)
+![Compilation Steps](./Images/compilation-process.jpg)
 ### Advantages
 - **Performance Boost:** The primary advantage is significant performance gains for training and inference. `torch.compile` optimizes PyTorch code, leading to faster execution times for deep learning models. This is especially beneficial for complex models or large datasets.
 - **Preserves Eager Execution:** Unlike TensorFlow's graph execution, PyTorch traditionally relies on eager execution, allowing for easier coding and debugging. `torch.compile` achieves performance improvements while staying within eager execution, making code easier to maintain and understand.
