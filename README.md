@@ -7,6 +7,14 @@ The main purpose of this repository is to track my learning progress and create 
 Feel free to explore and learn along with me!
 
 ## Table of Contents
+*June 2024*
+
+| S.N | Title | Note | Completion |
+| :--: | ---- | :--: | :--: |
+| 1 | Latest Research regarding LLMs |  | &#x2610; |
+| 2 | Explainable AI |  |  |
+| 3 | Security issues related to LLM |  |  |
+
 *May 2024*
 
 | S.N | Title | Note | Completion |
@@ -15,7 +23,9 @@ Feel free to explore and learn along with me!
 | 2 | LoRA and Its Derivatives |  | &#x2610; |
 | 3 | Optimizing LLMs for Speed and Memory |  | &#x2610; |
 | 4 | DAPT | [note](./DAPT/README.md) | &#x2611; |
-| 5 |  |  |  |
+| 5 | RAFT | note | &#x2610; |
+| 6 | Techniques to Extend Context Length  |  |  |
+| 7 | Falcon Series |  |  |
 
 *April 2024*
 
@@ -50,3 +60,5 @@ Feel free to explore and learn along with me!
 | 8 | Can LLMs Learn from a Single Example? | [link](https://www.fast.ai/posts/2023-09-04-learning-jumps/) |
 | 9 | Is DPO Always the Better Choice for Preference Tuning LLMs? | [link](https://deci.ai/blog/dpo-preference-tuning-llms/) |
 | 10 | Efficient Large Language Models: A Survey | [link](https://github.com/AIoT-MLSys-Lab/Efficient-LLMs-Survey?tab=readme-ov-file) |
+| 11 | Lets reproduce GPT-2 (124M) | [link](https://www.youtube.com/watch?v=l8pRSuU81PU&ab_channel=AndrejKarpathy) |
+| 12 | Natural Language Processing at UT Austin | [link](https://www.youtube.com/playlist?list=PLofp2YXfp7TZZ5c7HEChs0_wfEfewLDs7) |
