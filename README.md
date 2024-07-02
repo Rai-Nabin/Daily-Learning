@@ -6,14 +6,20 @@ The main purpose of this repository is to track my learning progress and create 
 
 Feel free to explore and learn along with me!
 
+*Latest LLM Research:* note
 ## Table of Contents
+July 2024
+
+| S.N | Title | Note | Completion |
+| :--: | ---- | :--: | :--: |
+| 1 | LLM Agents |  | &#x2610; |
+
 *June 2024*
 
 | S.N | Title | Note | Completion |
 | :--: | ---- | :--: | :--: |
-| 1 | Latest Research regarding LLMs |  | &#x2610; |
-| 2 | Explainable AI |  |  |
-| 3 | Security issues related to LLM |  |  |
+| 1 | Explainable AI |  |  |
+| 2 | Security issues related to LLM |  |  |
 
 *May 2024*
 
@@ -62,3 +68,4 @@ Feel free to explore and learn along with me!
 | 10 | Efficient Large Language Models: A Survey | [link](https://github.com/AIoT-MLSys-Lab/Efficient-LLMs-Survey?tab=readme-ov-file) |
 | 11 | Lets reproduce GPT-2 (124M) | [link](https://www.youtube.com/watch?v=l8pRSuU81PU&ab_channel=AndrejKarpathy) |
 | 12 | Natural Language Processing at UT Austin | [link](https://www.youtube.com/playlist?list=PLofp2YXfp7TZZ5c7HEChs0_wfEfewLDs7) |
+| 13 | Efficient ML  | [link](https://www.youtube.com/playlist?list=PL80kAHvQbh-pT4lCkDT53zT8DKmhE0idB) |
