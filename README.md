@@ -6,13 +6,14 @@ The main purpose of this repository is to track my learning progress and create 
 
 Feel free to explore and learn along with me!
 
-*Latest LLM Research:* note
+*Latest LLM Research:* [note](./Recent-Research/README.md)
 ## Table of Contents
 July 2024
 
-| S.N | Title | Note | Completion |
-| :--: | ---- | :--: | :--: |
-| 1 | LLM Agents |  | &#x2610; |
+| S.N | Title | Note | Completion |  |
+| :--: | ---- | :--: | :--: | ---- |
+| 1 | LLM Agents |  | &#x2610; |  |
+| 3 | Automatic Prompt Engineering |  |  |  |
 
 *June 2024*
 
