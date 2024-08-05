@@ -2,7 +2,7 @@
 
 | S.N | Title | Note | Completion |
 | :--: | ---- | ---- | ---- |
-| 1 | What is Neural Network? |  |  |
+| 1 | What is Neural Network? | [note](Neural-Networks/01-What-is-Neural-Network/README.md) |  |
 | 2 | Gradient Descent |  |  |
 | 3 | Back Propagation |  |  |
 | 4 | What is a GPT? |  |  |
