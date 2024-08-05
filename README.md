@@ -6,20 +6,28 @@ The main purpose of this repository is to track my learning progress and create 
 
 Feel free to explore and learn along with me!
 
-*Latest LLM Research:* [note](./Recent-Research/README.md)
+~~*Latest LLM Research:* [note](./Recent-Research/README.md)~~
 ## Table of Contents
-July 2024
+*August 2024*
 
-| S.N | Title | Note | Completion |  |
-| :--: | ---- | :--: | :--: | ---- |
-| 1 | LLM Agents |  | &#x2610; |  |
-| 3 | Automatic Prompt Engineering |  |  |  |
+| S.N | Title | Note | Completion |
+| :--: | ---- | ---- | ---- |
+| 1 | Prompt techniques for Graph RAG |  |  |
+| 2 | Federated Learning |  |  |
+
+*July 2024*
+
+| S.N | Title | Note | Completion |
+| :--: | ---- | :--: | :--: |
+| 1 | LLM Agents |  | &#x2610; |
+| 3 | Automatic Prompt Engineering |  |  |
+| 4 | Prompt Evaluation Technique |  |  |
 
 *June 2024*
 
 | S.N | Title | Note | Completion |
 | :--: | ---- | :--: | :--: |
-| 1 | Explainable AI |  |  |
+| 1 | Explainable AI | [note](./Explainable-AI/README.md) |  |
 | 2 | Security issues related to LLM |  |  |
 
 *May 2024*
