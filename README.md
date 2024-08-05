@@ -8,6 +8,10 @@ Feel free to explore and learn along with me!
 
 ~~*Latest LLM Research:* [note](./Recent-Research/README.md)~~
 ## Table of Contents
+
+***3Blue1Brown Lecture videos**: [note](./3Blue1Brown/README.md)* 
+
+
 *August 2024*
 
 | S.N | Title | Note | Completion |
