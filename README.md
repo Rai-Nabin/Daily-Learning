@@ -6,7 +6,7 @@ The main purpose of this repository is to track my learning progress and create 
 
 Feel free to explore and learn along with me!
 
-~~*Latest LLM Research:* [note](./Recent-Research/README.md)~~
+~~*Latest LLM Research:* [note](../Recent-Research/README.md)~~
 ## Table of Contents
 
 ***3Blue1Brown Lecture videos**: [note](./3Blue1Brown/README.md)* 
@@ -18,6 +18,7 @@ Feel free to explore and learn along with me!
 | :--: | ---- | ---- | ---- |
 | 1 | Prompt techniques for Graph RAG |  |  |
 | 2 | Federated Learning |  |  |
+| 3 | The Future of Knowledge Assistants: Jerry Liu | [note](RAG/The-Future-of-Knowledge-Assistants.md) |  |
 
 *July 2024*
 
@@ -50,7 +51,7 @@ Feel free to explore and learn along with me!
 
 | S.N | Title | Note | Completion |
 | :--: | ---- | :--: | :--: |
-| 1 | What is RAG? | [note](Daily-Learning/RAG/README.md) | &#x2610; |
+| 1 | What is RAG? | [note](RAG/README.md) | &#x2610; |
 | 2 | RAG vs Finetuning - Which is the Best Tool to Boost Your LLM Application? | [note](./RAG-vs-Finetuning/README.md) | &#x2610; |
 | 3 | ZeRO & DeepSpeed | [note](DeepSpeed/README.md) | &#x2611; |
 | 4 | Graph RAG | [note](./Graph-RAG/README.md) | &#x2610; |
