@@ -19,13 +19,14 @@ Feel free to explore and learn along with me!
 | 1 | Prompt techniques for Graph RAG |  |  |
 | 2 | Federated Learning |  |  |
 | 3 | The Future of Knowledge Assistants: Jerry Liu | [note](RAG/The-Future-of-Knowledge-Assistants.md) |  |
+| 4 |  |  |  |
 
 *July 2024*
 
 | S.N | Title | Note | Completion |
 | :--: | ---- | :--: | :--: |
 | 1 | LLM Agents |  | &#x2610; |
-| 3 | Automatic Prompt Engineering |  |  |
+| 3 | Automatic Prompt Engineering | [note](./Prompt-Engineering/README.md) |  |
 | 4 | Prompt Evaluation Technique |  |  |
 
 *June 2024*
