@@ -29,26 +29,26 @@
 ### Advancing beyond basic RAG
 - Moving from simple search to building a general context-augmented research assistant.
 - Three Key Steps:
-	1.**Advanced Data and Retrieval Modules**:
-    - Emphasized the importance of high-quality data in LLM applications.
-    - Components of data processing include parsing, chunking, and indexing.
-    - The significance of good parsing to reduce hallucinations in LLM outputs (e.g., comparing Llama Parse with Pi PDF).
-    - Llama Parse has gained popularity with tens of thousands of users and millions of pages processed.
-	![Advanced Data and Retrieval Modules](./images/step-1.png)
+	1. **Advanced Data and Retrieval Modules**:
+	    - Emphasized the importance of high-quality data in LLM applications.
+	    - Components of data processing include parsing, chunking, and indexing.
+	    - The significance of good parsing to reduce hallucinations in LLM outputs (e.g., comparing Llama Parse with Pi PDF).
+	    - Llama Parse has gained popularity with tens of thousands of users and millions of pages processed.
+		![Advanced Data and Retrieval Modules](./images/step-1.png)
     
-    2.**Advanced Single-Agent Query Flows**:
-    - Moving beyond single LLM prompt calls by layering different components (e.g., agents) to enhance query understanding, planning, and tool use.
-    - Introduction of "Agentic RAG," where LLMs interact with data services as tools.
-    - Core components include function calling, query planning, and maintaining conversation memory for stateful services.
+    2. **Advanced Single-Agent Query Flows**:
+	    - Moving beyond single LLM prompt calls by layering different components (e.g., agents) to enhance query understanding, planning, and tool use.
+	    - Introduction of "Agentic RAG," where LLMs interact with data services as tools.
+	    - Core components include function calling, query planning, and maintaining conversation memory for stateful services.
 	![Advanced Single Agent Query Flows](./images/step-2.png)
-	3.**General Multi-Agent Task Solver**:
-    - The limitations of single agents in handling an infinite set of tasks.
-    - Benefits of multi-agent systems:
-        - Specialization and focus on specific tasks.
-        - Parallelization of tasks for faster processing.
-        - Potential cost and latency savings by using weaker and faster models.
-    - Challenges in building reliable multi-agent systems, including agent interaction, service architecture, and the transition from Jupyter notebooks to production environments.
-	![General Multi-Agent Task Solver](./images/step-3.png)
+	3. **General Multi-Agent Task Solver**:
+	    - The limitations of single agents in handling an infinite set of tasks.
+	    - Benefits of multi-agent systems:
+	        - Specialization and focus on specific tasks.
+	        - Parallelization of tasks for faster processing.
+	        - Potential cost and latency savings by using weaker and faster models.
+	    - Challenges in building reliable multi-agent systems, including agent interaction, service architecture, and the transition from Jupyter notebooks to production environments.
+		![General Multi-Agent Task Solver](./images/step-3.png)
 
 ### Launch of Llama Agents:
 - Introduction of Llama Agents as microservices, where each agent operates as a separate service.
