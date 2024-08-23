@@ -18,7 +18,7 @@ Feel free to explore and learn along with me!
 | :--: | ---- | ---- | :--: |
 | 1 | Prompt techniques for Graph RAG |  |  |
 | 2 | Federated Learning |  |  |
-| 3 | The Future of Knowledge Assistants: Jerry Liu | [note](RAG/The-Future-of-Knowledge-Assistants.md) |  |
+| 3 | The Future of Knowledge Assistants: Jerry Liu | [note](RAG/The-Future-of-Knowledge-Assistants.md) | &#x2611; |
 | 4 | Improving RAG with Knowledge Graphs | [note](./Graph-RAG/Improving-RAG-with-Knowledge-Graphs.md) | &#x2611; |
 
 *July 2024*
