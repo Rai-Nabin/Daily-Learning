@@ -1,7 +1,7 @@
 # The Future of Knowledge Assistants
-Video Link: [link](https://www.youtube.com/watch?v=zeAyuLc_f3Q)
-GitHub: [link](https://github.com/run-llama/llama-agents)
-Llama Cloud: [link](https://docs.llamaindex.ai/en/stable/module_guides/indexing/llama_cloud_index/)
+- Video Link: [link](https://www.youtube.com/watch?v=zeAyuLc_f3Q)
+- GitHub: [link](https://github.com/run-llama/llama-agents)
+- Llama Cloud: [link](https://docs.llamaindex.ai/en/stable/module_guides/indexing/llama_cloud_index/)
 ### Introduction
 
 - **Presenter**: Jerry, co-founder, and CEO of Llama Index.
